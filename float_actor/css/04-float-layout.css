@@ -1,0 +1,93 @@
+body {
+margin: 0px;
+}
+
+.container-wrap {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.container-wrap * {
+	margin-top: 0px;	
+	margin-bottom: 0px;
+}
+
+.images-box {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+/* hover 상태 */
+
+
+/* images 상태 */
+.left-images {
+	float: left;
+	width: 50%;
+	height: auto;
+} 
+
+.right-images {
+	float: right;
+	width: 50%;
+	height: auto;
+}
+
+
+/* text 상태 */
+.texts-box {
+overflow: hidden;
+text-align: center;
+}
+
+
+.texts-title {
+	margin-top: 3.4375em;
+	margin-bottom: 1.125em;
+	font-family: "Montserrat", sans-serif;
+	font-size: 19px;
+	line-height: 1.1;
+	color: #535250;
+
+}
+.texts {
+	padding-left: 1.875em;
+	padding-right: 1.875em;
+	font-family: 'Open Sans', sans-serif;
+}
+
+/*border 주기*/
+.social::before{
+	content: '';
+	display: block;
+	width: 45px;
+	height: 0px;
+	border-top: 1px solid #7f7973;
+	margin: 15px auto;/*1개 사방이 같은 값, 2개 적용하면 첫번째 위아래, 두번째 양옆*/
+
+}
+
+
+/* crearfix, layout-hafe  */
+.layout-hafe {
+ width: 50%;
+}
+
+.clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+/*social icons*/
+
+.icon-twitter:hover {
+	fill: #4ca6de;
+}
+
+
+
+[class^='images-']:hover {
+background-color: #c5ebff;
+}
