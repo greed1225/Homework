@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<link rel="stylesheet" href="../../Resources/font-awesome/font-awesome.min.css">
+<title>Buttom-Set 제작하기</title>
+<style>
+  body {
+    height: 60vh;
+    background: linear-gradient(#72ced9, #53acb7);
+  }
+ 
+  ul {
+  width: 80%;
+  margin: 0;
+  margin-left:35%;
+  margin-top:20%;
+  padding: 0;
+  }
+    
+  .btn-Set>li:last-child [class*="btn-"] {
+    border-radius: 0 20px 20px 0;
+    border-left: #000;
+  }
+  .btn-Set>li:first-child [class*="btn-"] {
+    border-radius: 20px 0 0 20px; /*왼쪽 위부터 시계방향*/
+    border-right: #000;
+  }
+  
+  /* 선택자원리: 띄어쓰기를 하면 자식~ 이 자식!! 붙이면 자기 안에서 찾는..*/
+
+  li {
+    display: block;
+    text-align: center;
+    width: 100px; 
+    float: left;
+    color: #618b90;
+    list-style-type:none;
+  }
+  
+  buttom {
+    opacity: 0.8;
+    padding: 10px;
+    display: block;
+    background:#fafafa;
+    border: 1px solid #618b90;
+  }
+  
+  buttom:hover {
+    opacity: 1;
+    color: #4f7579;
+    transition: 1s;
+    background:#f4f2cd;
+  }
+  a {
+      text-decoration: none;
+      color: #618b90;
+      padding: 30px;
+    }
+ .link {
+     padding-left: 10px; 
+     
+    }
+</style>
+</head>
+<body>
+  <ul class="btn-Set">
+    <li><buttom class="btn-Play" type="buttom"><span class="fa fa-play"><a href="#" class="link" alt="플레이버튼">Play</a></span></buttom></li>
+    <li><buttom class="btn-Pause" type="buttom"><span class="fa fa-pause"><a href="#" class="link" alt="일시정지버튼">Pause</a></span></buttom></li>
+    <li><buttom class="btn-Stop" type="buttom"><span class="fa fa-stop"><a href="#" class="link" alt="정지버튼">Stop</a></span></buttom></li>
+  </ul>
+
+
+
+</body>
+</html>
+
