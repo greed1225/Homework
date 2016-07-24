@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Resource/common.css">
+    <link rel="stylesheet" href="../Resource/normalize.css">
+    <title>grid-Responsive</title>
+    <style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    html {
+        font-size: 16px;
+        color: #989898;
+    }
+    /* 전체 width 1280px 기준 */
+    
+    #wrap {
+        width: 960px;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    
+    .box1 {
+        width: 100%;
+        height: 100px;
+        background: #ebc6c6;
+    }
+    
+    .box2 {
+        width: 33.3333%;
+        height: 400px;
+        background: #e4e4e4;
+        float: left;
+    }
+    
+    .box3 {
+        width: 33.3333%;
+        height: 400px;
+        background: #dcdcdc;
+        float: left;
+    }
+    
+    .box4 {
+        width: 33.3333%;
+        height: 400px;
+        background: #d3d3d3;
+        float: left;
+    }
+    
+    .box5 {
+        width: 100%;
+        height: 100px;
+        background: #cdb3b3;
+        float: left;
+    }
+    /* width 0 ~ 960px 까지 */
+    
+    @media screen and (max-width: 960px) {
+        #wrap {
+            width: 90%;
+        }
+    }
+    /* width 0 ~ 768px 까지 */
+    
+    @media screen and (max-width: 768px) {
+        #wrap {
+            width: 100%;
+        }
+    }
+    /* width 0 ~ 480px 까지 */
+    
+    @media screen and (max-width: 480px) {
+        .box2 {
+            float: none;
+            width: 100%;
+        }
+        .box3 {
+            float: none;
+            width: 100%;
+        }
+        .box4 {
+            float: none;
+            width: 100%;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="box1">nav</div>
+        <div class="box2">content1</div>
+        <div class="box3">content2</div>
+        <div class="box4">content3</div>
+        <div class="box5">footer</div>
+    </div>
+</body>
+
+</html>
