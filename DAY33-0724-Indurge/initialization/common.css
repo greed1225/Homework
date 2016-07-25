@@ -1,0 +1,86 @@
+@charset "utf-8";
+/*! common.css © yamoo9.net, 2016 */
+
+.reset-list-group ul,
+.reset-list-group ol,
+ul.reset-list,
+ol.reset-list {
+  margin-top:    0;
+  margin-bottom: 0;
+  padding-left:  0;
+  list-style:    none;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+.blank-bottom-img img + *,
+img.blank-bottom + * {
+  overflow: hidden;
+}
+
+img.flex-img {
+  width: 100%;
+  height: auto;
+}
+
+img.horizontal-center-img {
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.clearfix::after,
+.cf::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.lt-ie8 .clearfix,
+.lt-ie8 .cf {
+  zoom: 1;
+}
+
+.readable-hidden {
+  overflow: hidden;
+  position: absolute;
+  width:    1px;
+  height:   1px;
+  margin:   -1px;
+  border:   0;
+  padding:  0;
+}
+.readable-hidden.focusable:focus {
+  overflow: visible;
+  position: static;
+  clip:     auto;
+  width:    auto;
+  height:   auto;
+  margin:   0;
+}
+
+/*콘텐츠 이미지(<img>)에 적용되는 Fluid Image*/
+img.flex-img {
+  width: 100%; 
+  /*max-width: 100%; 이미지가 과도하게 커질 경우를 막아준다.*/
+  height: auto; /*가로값에 의거하여 세로값을 산출하고자 할때*/
+}
+
+img.keep-original-scale {
+  max-width: 100%;
+}
+
+/*배경 이미지(CSS)에 적용되는 Fluid Image*/
+.flex-img-3-4 {
+  width: 100%;
+  padding-bottom: 75%;
+  background-size: cover;
+  background-position: center center;
+}
+.flex-img-9-16 {
+  width: 100%;
+  padding-bottom: 56.25%;
+  background-size: cover;
+  background-position: center center;
+}
