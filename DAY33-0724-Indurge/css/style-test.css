@@ -1,0 +1,24 @@
+/* 유닛 모듈  1/8*100% 1분의8  1cloumms , 8cloumms */
+
+[class*="unit-"] { box-sizing: border-box; float: left;
+width: 100%;  height: 100vh;}
+
+/*
+test-unit
+.unit-1-8 { width:12.5%; background: red;}
+.unit-2-8 { width:25%; background: blue;}
+.unit-3-8 { width:33.3333%; background: skyblue;}
+.unit-4-8 { width:50%; background: pink;}
+.unit-5-8 { width:62.5%; }
+.unit-6-8 { width:75%; }
+.unit-7-8 { width:87.5%; }
+*/
+
+
+/* gutter 형성 */
+.gutter-group [class*="unit-"],
+.gutter { 
+		padding-left: 5%;
+		padding-right: 5%;
+ 		background-clip: content-box;
+ 		}
